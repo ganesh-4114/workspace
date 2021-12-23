@@ -1,0 +1,14 @@
+import java.util.Scanner;
+
+public class Equilateral {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		Scanner s = new Scanner(System.in);
+		int side; double area;
+		side = s.nextInt();
+		area = ((Math.sqrt(3)/4)*(side)*(side));
+		System.out.println(area);
+	}
+
+}

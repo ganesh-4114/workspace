@@ -1,0 +1,21 @@
+package ramesh;
+class Parent {
+	 void dev() {
+		System.out.println("Developer");
+	}
+}
+
+class Hybrid extends Parent {
+	void hi() {
+		System.out.println("ganesh");
+	}
+
+ class Child {
+	public static void main(String args[]) {
+       Hybrid emp = new Hybrid();
+		emp.dev();
+		emp.hi();
+	}
+
+}
+}

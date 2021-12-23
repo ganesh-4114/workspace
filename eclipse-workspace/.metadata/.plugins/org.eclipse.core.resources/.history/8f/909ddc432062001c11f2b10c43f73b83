@@ -1,0 +1,27 @@
+
+class Ac{
+	int x = 10;
+	void display() {
+		System.out.println("Hello");
+	}
+}
+
+class B extends Ac {
+	int x = 20;
+	void display() {
+		System.out.println(x);
+		System.out.println(super.x);
+		System.out.println("World");
+	
+	super.display();
+	}
+}
+
+public class C {
+	public static void main(String[] args) {
+		B g = new B();
+		g.display();
+		
+		
+	}
+}

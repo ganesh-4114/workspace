@@ -1,0 +1,36 @@
+package hi;
+
+public class Maps {
+	
+	String StartP, Dest1;
+	int Time; int Distance;
+	
+	void Travel(String StartP, String Dest1) {
+		System.out.println("Journey: " + StartP + "-" + Dest1);
+	}
+	
+	void Bus() {
+		
+	}
+	
+	 void Journey( int Time, int Distance) {
+		
+		if (Dest1 == "Rajahmundry") {			
+			System.out.println("By Bus: " + Time + " to cover " + Distance);
+		} 
+	 }	
+	 
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		Maps n = new Maps();
+		n.Travel("Chennai", "Rajahmundr");
+		n.Journey(8, 457);
+		
+		n.Travel("Chennai", "Rajahmundry");
+		n.Journey(8, 457);
+	}
+
+	
+
+}

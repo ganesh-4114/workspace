@@ -1,0 +1,43 @@
+package hi;
+
+
+class Lappy
+{
+	String RAM; String Type;
+	int Price;
+    void display()
+    {
+        System.out.println("Working...");
+    }
+    
+    static void specs(String RAM, String Type, int Price) {
+    	System.out.println("SPECIFICATIONS: " + RAM +" " + Type + " "+Price);
+    }
+}
+class Dell extends Lappy
+{
+    void print()
+    {
+        System.out.println("Dell Inspiron");
+    }
+    
+}
+class Lenovo extends Lappy
+{
+    void show()
+    {
+        System.out.println("Lenovo YOGA");
+    }
+}
+class Laptop
+{
+    public static void main(String args[]){
+        Dell d = new Dell();
+        d.print();
+        d.display();
+        d.specs("8GB", null, 0);
+        Lenovo l = new Lenovo();
+        l.show();
+        l.display();
+    }
+}

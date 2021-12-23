@@ -1,0 +1,17 @@
+package ramesh;
+
+ class Inheritance1 {
+	String name = "Sheshank";
+	int id = 21548;
+	void works() {
+		System.out.println(name + " works as a Software Engineer at Spinebiz");
+	}
+}
+	class Inheritance extends Inheritance1 {
+		String role = "React Developer";
+		public static void main(String[] args) {
+		Inheritance obj = new Inheritance();
+		obj.works();
+	
+}
+	}

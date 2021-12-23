@@ -1,0 +1,16 @@
+package assessment;
+import java.util.*;
+public class Paralleogram {
+
+	public static void main(String[] args) {
+		int base, height;
+		double area;
+		Scanner input = new Scanner(System.in);
+		System.out.print("Please provide inputs ");
+		base = input.nextInt();
+		height = input.nextInt();
+		area = base * height;
+		System.out.println("Area of Parallelogram: " + area);
+	}
+
+}

@@ -1,0 +1,55 @@
+
+class HueFind {
+	float red; float green; float blue;
+	public float getHue(int red, int green, int blue) {
+
+	    float min = Math.min(Math.min(red, green), blue);
+	    float max = Math.max(Math.max(red, green), blue);
+
+	    if (min == max) {
+	        return 0;
+	    }
+
+	    float hue = 0f;
+	    if (max == red) {
+	        hue = (green - blue) / (max - min);
+
+	    } else if (max == green) {
+	        hue = 2f + (blue - red) / (max - min);
+
+	    } else {
+	        hue = 4f + (red - green) / (max - min);
+	    }
+
+	    hue = hue * 60;
+	    if (hue < 0) hue = hue + 360;
+
+	    return Math.round(hue);
+	      
+	}
+	
+	void  Sat(float r, float g, float b) {
+		red = r / 255;
+		green = g / 255;
+		blue = b / 255;
+		
+		float cmax = Math.max(red, Math.max(green, blue));
+		float cmin = Math.min(red, Math.min(blue, green));
+		float diff = cmax - cmin;
+		
+		float saturation = (diff/cmax)*100;
+		float bright = (cmax*100);
+		System.out.println("Saturation: " +saturation);
+		System.out.println("Brightness: " + bright);
+	}
+	
+}
+
+public class Hue {
+	public static void main(String[] args) {
+		HueFind obj = new HueFind();
+		
+		System.out.println("Hue: " + obj.getHue(193, 255, 183));
+		obj.Sat(193, 255, 183);
+	}
+}

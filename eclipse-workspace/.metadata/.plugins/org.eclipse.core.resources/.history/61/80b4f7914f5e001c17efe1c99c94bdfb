@@ -1,0 +1,20 @@
+package ramesh;
+class Parent {
+	 void dev() {
+		System.out.println("Developer");
+	}
+}
+
+class Ganesh extends Parent {
+	void hi() {
+		System.out.println("ganesh");
+	}
+
+ class Child {
+	public static void main(String args[]) {
+		Ganesh emp = new Ganesh();
+		emp.dev();
+	}
+
+}
+}

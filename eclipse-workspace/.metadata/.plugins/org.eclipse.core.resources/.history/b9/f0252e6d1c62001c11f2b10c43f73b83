@@ -1,0 +1,29 @@
+package conditionalstatements;
+
+
+abstract class Abstract{
+	abstract void dis();
+	
+	static int  hi(int a, int b) {
+		return a+b;
+	}
+}
+
+class B extends Abstract {
+	public void dis() {
+		
+		System.out.println("Hello");
+	}
+	
+	static String h1(String c, String d) {
+		return (c+d);
+	}
+}
+
+public class Abs
+{
+	public static void main(String[] args) {
+		System.out.println(B.h1("adc", " 1"));
+	}
+	
+}

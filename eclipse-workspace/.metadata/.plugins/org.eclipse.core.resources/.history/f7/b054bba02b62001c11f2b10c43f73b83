@@ -1,0 +1,28 @@
+
+
+
+public interface Interface1 {
+	void Divi(int a, int b);
+}
+
+
+class b implements Interface1 {
+	public void Divi(int a, int b) {
+		System.out.println(a/b);
+	}
+}
+
+
+
+
+ class Inter extends b {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		Inter j = new Inter();
+		j.Divi(8, 7);
+	
+		
+	}
+
+}

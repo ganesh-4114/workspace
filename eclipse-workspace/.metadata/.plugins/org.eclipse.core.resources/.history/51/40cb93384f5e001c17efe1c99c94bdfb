@@ -1,0 +1,13 @@
+package ramesh;
+class Parent {
+	public void dev() {
+		System.out.println("Developer");
+	}
+}
+ class Child extends Parent {
+	public static void main (String args[]) {
+		Parent emp = new Parent();
+		emp.dev();
+	}
+
+}

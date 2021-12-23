@@ -1,0 +1,19 @@
+package assessment;
+
+import java.util.Scanner;
+
+public class VolPrism {
+
+	public static void main(String[] args) {
+		double base, height, volume;
+		Scanner input = new Scanner(System.in);
+		System.out.println("Base: ");
+		base = input.nextDouble();
+		System.out.println("height: ");
+		height = input.nextDouble();
+		volume = base * height;
+		System.out.println("Volume of Prism: " + volume);
+
+	}
+
+}

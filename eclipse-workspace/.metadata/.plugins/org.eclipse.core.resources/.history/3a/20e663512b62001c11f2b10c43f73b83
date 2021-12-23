@@ -1,0 +1,33 @@
+interface hij {
+	public  String a = "Hello";
+	public void Divi(int a, int b);
+	
+}
+
+class b1 implements hij {
+	public void Divi(int a, int b) {
+		System.out.println(a/b);
+		System.out.println(a);
+	}
+	
+	public static void main(String[] args) {
+		b1 obj = new b1();
+		obj.Divi(8, 7);
+	}
+}
+
+
+
+
+//public class Interface extends b {
+//
+//	public static void main(String[] args) {
+//		// TODO Auto-generated method stub
+//		Interface j = new Interface();
+//		j.Divi(8, 7);
+//		
+//		
+//	}
+//
+//}
+

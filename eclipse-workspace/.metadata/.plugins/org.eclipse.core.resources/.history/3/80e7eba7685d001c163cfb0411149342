@@ -1,0 +1,9 @@
+package ramesh;
+
+public class JigSawAcademy 
+{
+	public static void main(String[] args) 
+	{
+		System.out.println("hi");
+	}
+}

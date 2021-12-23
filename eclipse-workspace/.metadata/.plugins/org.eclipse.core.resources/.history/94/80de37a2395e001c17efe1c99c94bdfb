@@ -1,0 +1,25 @@
+package ramesh;
+
+import java.util.Scanner;
+
+class Inheritance1 {
+	String name;
+	int id = 21548;
+	void works(String name) {
+		Scanner n = new Scanner(System.in);
+		System.out.println(name + " works as a Software Engineer at Spinebiz");
+		System.out.println(Inheritance1.id);
+	}
+}
+	class Inheritance extends Inheritance1 {
+		String role = "React Developer";
+		public static void main(String[] args) {
+		Inheritance obj = new Inheritance();
+		obj.works("Ganesh");
+
+}
+	}
+	
+	class Ganesh extends Inheritance {
+		
+	}

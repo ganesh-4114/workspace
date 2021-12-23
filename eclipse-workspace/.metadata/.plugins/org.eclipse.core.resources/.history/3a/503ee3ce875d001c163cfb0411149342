@@ -1,0 +1,13 @@
+package ramesh;
+
+public class Array {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		String Employee[] = {"367G23"};
+		for (String i: Employee) {
+			System.out.println(i);
+		}
+	}
+
+}

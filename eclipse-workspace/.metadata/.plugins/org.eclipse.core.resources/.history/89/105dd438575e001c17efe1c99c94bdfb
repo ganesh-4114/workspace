@@ -1,0 +1,41 @@
+package ramesh;
+
+abstract class Bank{    
+abstract int getRateOfInterest(); 
+abstract void add(int a, int b);
+}    
+class SBI extends Bank{    
+int getRateOfInterest(){return 7;}
+
+@Override
+public void add(int a, int b) {
+	// TODO Auto-generated method stub
+	int c = a + b;
+	System.out.println(c);
+} 
+}    
+class PNB extends Bank{    
+int getRateOfInterest(){return 8;}
+
+@Override
+public void add(int a, int b) {
+	// TODO Auto-generated method stub
+	int d = a + b;
+	System.out.println(d);
+}    
+}    
+    
+class Abstract{    
+public static void main(String args[]){    
+Bank b;  
+b=new SBI();  
+System.out.println("Rate of Interest is: "+b.getRateOfInterest()+" %");   
+b.add(8, 8);
+b=new PNB();  
+System.out.println("Rate of Interest is: "+b.getRateOfInterest()+" %");
+b.add(8, 8);
+}} 
+
+
+
+

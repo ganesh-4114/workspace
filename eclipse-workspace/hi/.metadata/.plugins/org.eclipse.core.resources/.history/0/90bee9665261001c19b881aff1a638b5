@@ -1,0 +1,35 @@
+package hi;
+
+
+class Lappy
+{
+    void display()
+    {
+        System.out.println("Working...");
+    }
+}
+class Dell extends Lappy
+{
+    void print()
+    {
+        System.out.println("Dell Inspiron");
+    }
+}
+class Lenovo extends Lappy
+{
+    void show()
+    {
+        System.out.println("Lenovo YOGA");
+    }
+}
+class Laptop
+{
+    public static void main(String args[]){
+        Dell d = new Dell();
+        d.print();
+        d.display();
+        Lenovo l = new Lenovo();
+        l.show();
+        l.display();
+    }
+}

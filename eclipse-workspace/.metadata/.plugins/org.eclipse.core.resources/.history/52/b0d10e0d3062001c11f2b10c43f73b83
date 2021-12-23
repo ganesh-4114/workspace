@@ -1,0 +1,32 @@
+
+public class Base {
+	String EmpName; int EmpSalary;
+	
+	public Base() {
+		this.EmpName = "Ganesh";
+		this.EmpSalary = 25000;
+	}
+	
+	public Base(int EmpSal) {
+		EmpSalary = EmpSal;
+	}
+	
+	public Base(String EmpSal) {
+		EmpName = EmpSal;
+	}
+	
+	public static void main(String[] args) {
+		Base obj = new Base();
+		System.out.println(obj.EmpName);
+		System.out.println();
+		System.out.println("Parameterized Constructor");
+		Base ob = new Base(2500);
+		System.out.println(ob.EmpSalary);
+		
+		System.out.println();
+		System.out.println("Overloading");
+		Base ob2 = new Base("Hari");
+		System.out.println(ob2.EmpName);
+
+	}
+}

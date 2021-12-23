@@ -1,0 +1,25 @@
+import java.util.Scanner;
+
+class House {
+	static String Doorno; static String Area;
+	static String Vacant;
+	
+	void Vacancy() {
+		if (Vacant == "Occupied") {
+			System.out.println("The house is occupied");
+		} else {
+			System.out.println("Not Occupied");
+		}
+	}
+
+	public static void main(String[] args) {
+		Scanner input = new Scanner(System.in);
+		System.out.print("Please fill area details");
+		Doorno = input.nextLine();
+		Area = input.nextLine();
+		Vacant = input.nextLine();
+		
+		
+	}
+
+}

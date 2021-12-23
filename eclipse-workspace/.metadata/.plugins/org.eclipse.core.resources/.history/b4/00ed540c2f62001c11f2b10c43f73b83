@@ -1,0 +1,20 @@
+
+public class Base {
+	String EmpName; int EmpSalary;
+	
+	public Base() {
+		this.EmpName = "Ganesh";
+		this.EmpSalary = 25000;
+	}
+	
+	public Base(int EmpSal) {
+		EmpSalary = EmpSal;
+	}
+	
+	public static void main(String[] args) {
+		Base obj = new Base();
+		System.out.println(obj.EmpName);
+		Base ob = new Base(2500);
+		System.out.println(ob.EmpSalary);
+	}
+}

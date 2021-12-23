@@ -1,0 +1,20 @@
+package assessment;
+
+import java.util.Scanner;
+
+public class TotalSurface {
+
+	public static void main(String[] args) {
+		double rad,height,area;
+		Scanner input = new Scanner(System.in);
+		System.out.print("radius: ");
+		rad = input.nextDouble();
+		System.out.print("height: ");
+		height = input.nextDouble();
+		area = (2*22*rad)*(rad + height);
+		System.out.println("Total Surface area: " + area);
+		
+
+	}
+
+}

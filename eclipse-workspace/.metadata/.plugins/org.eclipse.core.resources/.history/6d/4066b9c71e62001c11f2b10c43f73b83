@@ -1,0 +1,19 @@
+
+class Ac{
+	void display() {
+		System.out.println("Hello");
+	}
+}
+
+class B extends Ac {
+	void display() {
+		System.out.println("World");
+	}
+}
+
+public class C {
+	public static void main(String[] args) {
+		B g = new B();
+		g.display();
+	}
+}

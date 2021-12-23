@@ -1,0 +1,29 @@
+package hi;
+
+
+class Lappy {
+	String RAM;
+	String Type;
+	int Price;
+	
+	 void disp() {
+		System.out.println("Specs: " + RAM + Type + Price );
+	}
+}
+
+class HP extends Lappy {
+	String RAM = "8GB";
+	String Type = "SSD";
+	int Price = 45000;
+	
+}
+
+public class Laptop {
+	
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		HP obj = new HP();
+		obj.disp();
+	}
+
+}

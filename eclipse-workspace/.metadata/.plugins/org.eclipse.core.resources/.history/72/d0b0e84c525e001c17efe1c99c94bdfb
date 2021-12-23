@@ -1,0 +1,44 @@
+package ramesh;
+class Parent {
+	String role;
+	 int experience;
+	 public String getRole() {
+		return role;
+	}
+	public void setRole(String role) {
+		this.role = role;
+	}
+	public int getExperience() {
+		return experience;
+	}
+	public void setExperience(int experience) {
+		this.experience = experience;
+	}
+	void dev() {
+		 
+		System.out.println("Developer");
+	}
+}
+
+class Hybrid extends Parent {
+	void hi() {
+		System.out.println("ganesh");
+	}
+	void newjoin() {
+		System.out.println("Yes, ganesh is newly joined");
+	}
+}
+ class Child {
+	public static void main(String args[]) {
+       Hybrid emp = new Hybrid();
+		emp.dev();
+		emp.hi();
+		emp.newjoin();
+		emp.setRole("Java Developer");
+		emp.setExperience(5);
+		System.out.println(emp.getRole());
+		System.out.println(emp.getExperience());
+	}
+
+}
+

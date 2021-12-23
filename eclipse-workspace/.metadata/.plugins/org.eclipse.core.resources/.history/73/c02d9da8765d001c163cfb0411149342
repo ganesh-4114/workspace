@@ -1,0 +1,19 @@
+import java.util.Scanner;
+
+class Spinebiz {
+	public void itApps() {
+		Scanner r = new Scanner(System.in);
+		System.out.println("Please provide an Input:");
+		String name = r.nextLine();
+		String name2 = r.nextLine();
+		System.out.println(name);
+		System.out.println(name2);
+	}
+}
+
+public class Employee {
+ public static void main(String[] args) {
+	 Spinebiz d = new Spinebiz();
+	 d.itApps();
+ }
+}

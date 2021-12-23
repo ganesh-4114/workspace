@@ -1,0 +1,38 @@
+package ramesh;
+
+import java.util.Scanner;
+
+class Lan {
+	public String id ;
+	private String password = "Dgc@98765";
+	void details() {
+		System.out.println("Wifi Details");
+	}
+	public String getId() {
+		return id;
+	}
+	public void setId(String id) {
+		this.id = id;
+	}
+	public String getPassword() {
+		return password;
+	}
+	public void setPassword(String password) {
+		this.password = password;
+	}
+	
+	
+}
+
+class Wifi extends Lan {
+	public static void main(String[] main) {
+		Scanner dgc12 = new Scanner(System.in);
+		Lan obj = new Lan();
+		obj.details();
+		System.out.println("PLease provide Lan iD: ");
+		id = dgc12.nextInt();
+		
+		System.out.println(obj.getId());
+		System.out.println(obj.getPassword());
+	}
+}

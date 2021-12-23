@@ -1,0 +1,9 @@
+package ramesh;
+class Parent {
+	public void dev() {
+		System.out.println("Developer");
+	}
+}
+public class Child {
+
+}

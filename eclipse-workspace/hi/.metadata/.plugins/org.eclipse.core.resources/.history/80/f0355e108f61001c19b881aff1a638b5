@@ -1,0 +1,21 @@
+
+public class House {
+	String Doorno; String Area;
+	String Vacant;
+	
+	if (vacant == "Occupied") {
+		System.out.println("The house is occupied");
+	} else {
+		System.out.println("Not Occupied");
+	}
+	
+	void occupied() {
+		
+	}
+
+	public static void main(String[] args) {
+		
+
+	}
+
+}

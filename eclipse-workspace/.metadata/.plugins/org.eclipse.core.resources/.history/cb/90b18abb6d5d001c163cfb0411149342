@@ -1,0 +1,17 @@
+
+
+public class Spinebiz {
+    public void itApps() {
+    	int Emp1 = 1021,Emp2 = 2021;
+    	System.out.println(Emp1 + " " + Emp2);
+    }
+}
+
+class MainMethod {
+	
+	public static void main(String[] args) {
+		Spinebiz hi = new Spinebiz();
+		hi.itApps();
+	
+	}
+}

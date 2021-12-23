@@ -1,0 +1,11 @@
+
+public class House {
+	String Doorno; String Area;
+
+	public static void main(String[] args) {
+		House obj = new House();
+		System.out.println(obj.Area = "Ambattur");
+		
+	}
+
+}

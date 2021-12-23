@@ -1,0 +1,13 @@
+
+public class A {
+	String a = "Hi";
+	
+	public A() {
+		this.a = a;
+	}
+	
+	public static void main(String[] args) {
+		A obj = new A();
+		System.out.println(obj.a);
+	}
+}

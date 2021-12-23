@@ -1,0 +1,13 @@
+package ramesh;
+public class Fibonacci {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+          int r = 5;
+         float  area=(22*r*r)/7 ;
+         System.out.println("Area of Circle is: " + area);      
+   }
+}
+	
+
+

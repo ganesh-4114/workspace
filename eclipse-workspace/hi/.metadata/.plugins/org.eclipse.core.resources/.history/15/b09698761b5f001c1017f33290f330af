@@ -1,0 +1,11 @@
+package assessment;
+import java.util.*;
+public class Paralleogram {
+
+	public static void main(String[] args) {
+		int base, height;
+		Scanner input = new Scanner(System.in);
+
+	}
+
+}
