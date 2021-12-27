@@ -10,7 +10,7 @@ import java.awt.event.KeyEvent;
 
 /**
  *
- * @author derickfelix
+ * @author ganesh
  */
 public interface IStrategy {
     

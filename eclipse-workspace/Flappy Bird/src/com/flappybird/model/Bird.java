@@ -13,7 +13,7 @@ import java.awt.image.ImageObserver;
 
 /**
  *
- * @author derickfelix
+ * @author ganesh
  */
 public class Bird extends GameObject {
 
@@ -30,7 +30,7 @@ public class Bird extends GameObject {
         this.x -= width;
         this.y -= height;
         tube = new Tube[1];
-        tube[0] = new Tube(900, Window.HEIGHT - 60);
+        tube[0] = new Tube(800, Window.HEIGHT - 50);
         this.dy = 4;
     }
     @Override

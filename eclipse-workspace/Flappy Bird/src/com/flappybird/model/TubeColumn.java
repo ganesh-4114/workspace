@@ -24,8 +24,8 @@ public class TubeColumn {
     private List<Tube> tubes;
     private Random random;
     private int points = 0;
-    private int speed = 250;
-    private int changeSpeed = speed * 10;
+    private int speed = 5;
+    private int changeSpeed = speed;
 
     public TubeColumn() {
         tubes = new ArrayList<>();
@@ -40,8 +40,8 @@ public class TubeColumn {
 
         for (int i = 0; i < 20; i++) {
 
-            Tube tempTube = new Tube(800, last);
-            tempTube.setDx(speed + 10);
+            Tube tempTube = new Tube(700, last);
+            tempTube.setDx(speed);
             last = tempTube.getY() - tempTube.getHeight();
             if (i < randWay || i > randWay + 10) {
                 tubes.add(tempTube);
@@ -63,8 +63,8 @@ public class TubeColumn {
         if (tubes.isEmpty()) {
             this.points += 1;
             if (changeSpeed == points) {
-                this.speed += 100;
-                changeSpeed += 5000;
+                this.speed += 5;
+                changeSpeed += 5;
                 System.out.println(speed);
                 
             }

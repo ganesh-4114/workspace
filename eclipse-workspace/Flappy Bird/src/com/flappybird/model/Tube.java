@@ -12,7 +12,7 @@ import java.awt.image.ImageObserver;
 
 /**
  *
- * @author derickfelix
+ * @author ganesh
  */
 public class Tube extends GameObject {
 

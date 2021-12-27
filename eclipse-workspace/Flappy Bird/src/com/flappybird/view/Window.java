@@ -11,11 +11,11 @@ import javax.swing.JFrame;
 
 /**
  *
- * @author derickfelix
+ * @author ganesh
  */
 public class Window {
-    public static int WIDTH = 800;
-    public static int HEIGHT = 600;
+    public static int WIDTH = 700;
+    public static int HEIGHT = 500;
     public Window(int width, int height, String title, Game game) {
         JFrame frame = new JFrame();
         frame.add(game);
